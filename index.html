@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tap Music</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="app">
+        <h1>Welcome to Tap Music</h1>
+        <p>Make music  <span style="color:white;" class="typying">Faster</span>  </p>
+    </header>
+   <h3 style="display: none; margin:10px">You Clicked</h3>
+    <div class="visual"></div>
+    <div class="pads">
+        <div class="pad1">
+            <audio class="sounds" src="./sounds/bubbles.mp3"></audio>
+        </div>
+        <div class="pad2">
+            <audio class="sounds"  src="./sounds/clay.mp3"></audio>
+        </div>
+        <div class="pad3">
+            <audio class="sounds"  src="./sounds/confetti.mp3"></audio>
+        </div>
+        <div class="pad4">
+            <audio class="sounds" src="./sounds/glimmer.mp3"></audio>
+        </div>
+        <div class="pad5">
+            <audio class="sounds"  src="./sounds/moon.mp3"></audio>
+        </div>
+        <div class="pad6">
+            <audio class="sounds"  src="./sounds/ufo.mp3"></audio>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+      $('.pad1,.pad2,.pad3,.pad4,.pad5,.pad6').click(function(){
+
+        $('h3').fadeIn("slow").fadeOut("slow").css('color','red')
+      });
+       
+      
+        
+       
+      
+    });
+    
+</script>
+<script src="index.js"></script>
+</body>
+</html>
